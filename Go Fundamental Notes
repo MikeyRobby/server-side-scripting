@@ -1,0 +1,53 @@
+Package Scope Variable
+var [name] [type](int, float, string..)
+Short Declaration:
+[name] := [value]
+ - Can only be used within a code block inside a function.
+ - Type is figured out automatically
+
+
+// means a comment. 
+ - Comments are ignored.
+
+
+Signiture of a Function:
+
+func (reciever) identifier(parameters) (returns){
+code block
+}
+ - reciever and returns are optional
+ - parameters can be blank
+ - when calling a function the parenthesis are required. "func()"
+
+
+strings are denoted by "" or ''
+'' is a raw string literal
+
+String Concatenation:
+("Hello," + argument + "!")
+
+DATA STRUCTURES
+
+SLICE = keep a list of values of the same type
+ [][type]{[values]}
+ []string{"","",""}
+ - Access by index position
+ - 0 based index
+  [name][index #]
+ 
+MAP = Stores key, value pairs
+ map[key type][value type]{}
+ map[string]int{"string" : int, "string" : int, "string" : int}
+ - Always comes out in a random order
+ - Acessed by key
+ [name][key]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ VALUABLE FUNTIONS
+ 
+ len(arg) = Tells you the length of something
