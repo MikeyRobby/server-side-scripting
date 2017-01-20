@@ -9,9 +9,9 @@ func main() {
 
   // For more information on For Loops look in the "Go Fundamental Notes"
   // For Loop using range
-  for i, _ := range n {
-    fmt.Println(n[i])
-    // the iterator or the value can be used for this loop
+  for i,v := range n {
+    fmt.Println(i, v)
+    // prints the index and the value
 
   }
 // For Loop
