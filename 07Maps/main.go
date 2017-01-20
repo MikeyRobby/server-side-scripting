@@ -16,7 +16,8 @@ func main() {
     "C.S. Lewis" : "The Lion, the Witch and the Wardrobe" ,
     "Dan Brown" : "The Da Vinci Code" ,
   }
-
+ // Prints out a single entry from the map with a key of J.K. Rowling
   fmt.Println(m["J.K. Rowling"])
+  // prints out the entire map
   fmt.Println(m)
 }
