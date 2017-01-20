@@ -1,5 +1,9 @@
+Variables store information to be used later
+Instead of typing the same thing over again you can store it in a variable and use the variable name in it's place
+
 Package Scope Variable
 var [name] [type](int, float, string..)
+
 Short Declaration:
 [name] := [value]
  - Can only be used within a code block inside a function.
@@ -20,11 +24,14 @@ code block
  - when calling a function the parenthesis are required. "func()"
 
 
-strings are denoted by "" or ''
-'' is a raw string literal
+Strings:
+ - Whatever is in a string will show up exactly how it is typed
+ - strings are denoted by "" or ''
+ - '' is a raw string literal
 
-String Concatenation:
-("Hello," + argument + "!")
+ Concatenation is using the + operator to combine things
+ String Concatenation:
+ - ("Hello," + argument + "!")
 
 DATA STRUCTURES
 
