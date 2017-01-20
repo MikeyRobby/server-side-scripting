@@ -1,3 +1,11 @@
+GO COMMANDS
+
+go version = Prints go version
+go run [filename] = compile and run a go file
+go build [filename] = compile packages and dependencies (creates and executable file)
+ - the .go extension must be included in the filename
+
+
 Variables store information to be used later
 Instead of typing the same thing over again you can store it in a variable and use the variable name in it's place
 
@@ -37,8 +45,9 @@ DATA STRUCTURES
 
 SLICE = keep a list of values of the same type
  [][type]{[values]}
- []string{"","",""}
+  - []string{"","",""}
  - Access by index position
+ - The first value in an Index is 0, not 1 like people are used to starting at. (0 based)
  - 0 based index
   [name][index #]
 
@@ -48,6 +57,31 @@ MAP = Stores key, value pairs
  - Always comes out in a random order
  - Acessed by key
  [name][key]
+
+
+ LOOPS
+
+ FOR LOOP:
+ for [iterator], [iterator][Relational Operator][Limit], [incrementor]{
+ //code
+ }
+
+- will run the code inside the code block until the iterator meets its' limit
+
+ - for i := 0; i < 100; i++{
+
+ }
+  - i++ = i + 1
+
+ for [iterator], [value] := range [variable]
+
+ - for i, v := range m {
+ //code
+ }
+
+  - i = iterator
+  - v = value
+  - i or v can be left blank by using '_'
 
 
 
