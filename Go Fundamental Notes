@@ -55,7 +55,7 @@ MAP = Stores key, value pairs
  map[key type][value type]{}
  map[string]int{"string" : int, "string" : int, "string" : int}
  - Always comes out in a random order
- - Acessed by key
+ - Accessed by key
  [name][key]
 
 
