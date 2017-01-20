@@ -56,6 +56,7 @@ MAP = Stores key, value pairs
  map[string]int{"string" : int, "string" : int, "string" : int}
  - Always comes out in a random order
  - Accessed by key
+ - Cannot have Duplicate Entries
  [name][key]
 
 
