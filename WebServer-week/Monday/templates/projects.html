@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <style>
+    .main-nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      background: -webkit-linear-gradient(top, rgba(100,100,100,1), rgba(169,169,169,.0));
+      background: -moz-linear-gradient(top, rgba(100,100,100,1), rgba(169,169,169,.0));
+
+    }
+
+    .main-nav .nav-item {
+      display: inline;
+      list-style-type: none;
+      text-decoration: none;
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+
+    .main-nav .nav-item a {
+      padding-bottom: 1em;
+      text-decoration: none;
+      color: white;
+    }
+    .nav-item:hover {
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-bottom: 1em;
+      border-bottom: white 2px solid;
+    }
+
+    .main-nav .nav-item a:hover{
+      text-decoration: none;
+      color: white;
+    }
+    body{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: black;
+      text-align: center;
+    }
+    h1{
+      color: aliceblue;
+      text-align: center;
+    }
+    h3 a{
+      text-decoration: none;
+      color: white;
+    }
+
+    h3 a:hover{
+      text-decoration: underline;
+    }
+    section{
+      background: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(169,169,169,.8));
+      background: -moz-linear-gradient(top, rgba(0,0,0,1), rgba(169,169,169,.8));
+      height: 200px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: white;
+      border: 1.5px solid #ffffff;
+      border-radius: 10px;
+    }
+    section:hover {
+      background: -webkit-linear-gradient(top, rgba(102, 178, 255, 1), rgba(0, 0, 204, .8));
+      background: -moz-linear-gradient(top, rgba(102, 178, 255, 1), rgba(0, 0, 204, .8));
+      height: 200px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: white;
+      border: 1.5px solid #ffffff;
+      border-radius: 10px;
+    }
+    .pic img{
+      height: 200px;
+      width: 200px;
+      float: left;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+<nav class="main-nav">
+  <ul >
+    <li class="nav-item"><a href="index.html">Home</a></li>
+    <li class="nav-item"><a href="projects.html">Projects</a></li>
+    <li class="nav-item"><a href="contact.html">Contact</a></li>
+    <li class="nav-item"><a href="about.html">About</a></li>
+  </ul>
+</nav>
+<h1>Projects</h1>
+<section>
+  <div class="pic">
+    <a href="https://www.github.com/MikeyRobby/test/tree/master/GuessingGame"><img
+      src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/b5/b599127509772f2125568318a38f24e64881de61_full.jpg" alt="Question Mark"></a>
+  </div>
+  <h3><a href="https://www.github.com/Mikeyrobby/test/tree/master/GuessingGame">Guessing Game</a>:</h3>
+  <p>This is a simple guessing game run in the command line. The user will try to guess a number between 1 and 10 that is the same as the machine's number.</p>
+</section>
+<section>
+  <div class="pic">
+    <a href="https://github.com/jayRoney/javaMan0.2"><img
+      src="http://static.coffeecup.com/images/branding/avatar-1200x1200.png" alt="Java Man"></a>
+  </div>
+  <h3><a href="https://github.com/jayRoney/javaMan0.2">Java Man</a>:</h3>
+  <p>Java Man!! Collect your cups of coffee and watch the caffeine take over, but be careful! Crash into the walls and its GAME OVER!! </p>
+</section>
+</body>
+</html>
