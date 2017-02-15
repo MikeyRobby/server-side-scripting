@@ -16,6 +16,7 @@ func main(){
 	http.HandleFunc("/", index)
   http.HandleFunc("/blog", blog)
 	http.ListenAndServe(":8080", nil)
+
 }
 
 func index(w http.ResponseWriter, req *http.Request){
