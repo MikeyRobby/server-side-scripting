@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+  <style>
+    body{
+      /*display: flex;*/
+      /*align-items: center;*/
+      /*justify-content: center;*/
+      background-color: #202020;
+    }
+    .main-nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      background: -webkit-linear-gradient(top, rgba(100,100,100,1), rgba(169,169,169,.0));
+      background: -moz-linear-gradient(top, rgba(100,100,100,1), rgba(169,169,169,.0));
+
+    }
+
+    .main-nav .nav-item {
+      display: inline;
+      list-style-type: none;
+      text-decoration: none;
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+
+    .main-nav .nav-item a {
+      padding-bottom: 1em;
+      text-decoration: none;
+      color: white;
+    }
+    .nav-item:hover {
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-bottom: 1em;
+      border-bottom: white 2px solid;
+    }
+
+    .main-nav .nav-item a:hover{
+      text-decoration: none;
+      color: white;
+    }
+    main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .post{
+      width: 90%;
+      height: 500px;
+      border: 2px solid gray;
+      font-family: "Arabic Typesetting";
+      font-size: 3em;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<nav class="main-nav">
+  <ul >
+    <li class="nav-item"><a href="index.html">Home</a></li>
+    <li class="nav-item"><a href="projects.html">Projects</a></li>
+    <li class="nav-item"><a href="contact.html">Contact</a></li>
+    <li class="nav-item"><a href="about.html">About</a></li>
+    <li class="nav-item"><a href="blog.html">Blog</a></li>
+  </ul>
+</nav>
+<main>
+<div class="post">{{.}}</div>
+</main>
+</body>
+</html>
