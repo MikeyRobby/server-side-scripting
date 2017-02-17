@@ -52,7 +52,6 @@
     .post{
       width: 90%;
       height: 500px;
-      border: 2px solid gray;
       font-family: "Arabic Typesetting";
       font-size: 3em;
       color: white;
@@ -70,7 +69,12 @@
   </ul>
 </nav>
 <main>
-<div class="post">{{.}}</div>
+<div class="post">
+  {{range .}}
+  <p>{{.}}</p>
+  <hr>
+  {{end}}
+</div>
 </main>
 </body>
 </html>

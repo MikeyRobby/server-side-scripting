@@ -30,8 +30,15 @@ func projects(w http.ResponseWriter, req *http.Request) {
 }
 
 func blog(w http.ResponseWriter, req *http.Request) {
-  r ,_ := ioutil.ReadFile("posts/message")
-  tpl.ExecuteTemplate(w, "blog.html", string(r))
+  r,_ := ioutil.ReadFile("posts/message.txt")
+  r2 ,_ := ioutil.ReadFile("posts/listen.txt")
+  r3,_ := ioutil.ReadFile("posts/fear.txt")
+  r4 ,_ := ioutil.ReadFile("posts/change.txt")
+  r5 ,_ := ioutil.ReadFile("posts/scared.txt")
+
+  p := []string{string(r), string(r2), string(r3), string(r4), string(r5)}
+
+  tpl.ExecuteTemplate(w, "blog.html", p)
 }
 
 func about(w http.ResponseWriter, req *http.Request){
