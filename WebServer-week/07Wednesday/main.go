@@ -18,7 +18,9 @@ func main() {
   http.HandleFunc("/blog.html", blog)
   http.HandleFunc("/about.html", about)
   http.HandleFunc("/contact.html", contact)
+  http.Handle("/res/", http.StripPrefix("/res",http.FileServer(http.Dir("/pic"))))
   http.ListenAndServe(":8080", nil)
+
 }
 
 func index(w http.ResponseWriter, req *http.Request)  {
@@ -46,8 +48,9 @@ func about(w http.ResponseWriter, req *http.Request){
 }
 
 func contact(w http.ResponseWriter, req *http.Request) {
+  w.Header().Set("content-type", "text/html; charset=utf-8")
   tpl.ExecuteTemplate(w, "contact.html", nil)
-}
 
+}
 
 
