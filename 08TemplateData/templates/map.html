@@ -6,8 +6,8 @@
   <title>Passing Data</title>
 </head>
 <body>
-{{Range $key, $value .}}
-{{.}}
+{{range $k, $v := .}}
+{{$k}} - {{$v}}
 {{end}}
 </body>
 </html>
