@@ -1,0 +1,21 @@
+html{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body{
+  background: url("w640.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: 3em;
+  color: whitesmoke;
+  font-family: 'Arimo', sans-serif;
+}
