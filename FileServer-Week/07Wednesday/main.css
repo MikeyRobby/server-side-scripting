@@ -1,0 +1,23 @@
+html{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background: url("Rockefeller-Center-observation-deck-HD.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+  color: aliceblue;
+  font-size: 8em;
+}

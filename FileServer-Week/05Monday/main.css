@@ -1,0 +1,16 @@
+html{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url("google-play-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+  font-size: 5em;
+}

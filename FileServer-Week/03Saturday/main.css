@@ -1,0 +1,27 @@
+html{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  height: auto;
+  width: 100%;
+}
+
+body{
+  background-repeat: no-repeat;
+  background-image: url("wolf.jpg");
+  background-size: cover;
+}
+
+h1{
+  font-size: 12em;
+  background: -webkit-linear-gradient(top, rgba(0,0,255,1.0), rgba(255,255,255,0.2));
+  background: -moz-linear-gradient(top, rgba(0,0,255,1.0), rgba(255,255,255,0.2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-decoration-color: transparent;
+}
