@@ -2,7 +2,7 @@ GO COMMANDS
 
 go version = Prints go version
 go run [filename] = compile and run a go file
-go build [filename] = compile packages and dependencies (creates and executable file)
+go build [filename] = compile packages and dependencies (creates an executable file)
  - the .go extension must be included in the filename
 
 
