@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome</title>
+</head>
+<body>
+
+<div>
+  {{if .First}}
+  <h1>Username: {{.UserName}}</h1>
+  <h1>First Name: {{.First}}</h1>
+  <h1>Last Name: {{.Last}}</h1>
+
+  {{end}}
+</div>
+{{if .}}
+Welcome {{.UserName}}
+
+{{end}}
+</body>
+</html>

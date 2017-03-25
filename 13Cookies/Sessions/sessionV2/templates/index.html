@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+</head>
+<body>
+
+<div>
+  {{if .First}}
+  <h1>Username: {{.UserName}}</h1>
+  <h1>First Name: {{.First}}</h1>
+  <h1>Last Name: {{.Last}}</h1>
+  {{end}}
+</div>
+
+<form method="post">
+  <h2>Sign Up</h2>
+  <label for="username">User Name</label>
+  <input type="text" id="username" name="username">
+  <br>
+  <label for="firstname">First Name</label>
+  <input type="text" id="firstname" name="firstname">
+  <br>
+  <label for="lastname">Last Name</label>
+  <input type="text" id="lastname" name="lastname">
+  <br>
+  <a href="home.html" ><input type="submit"></a>
+</form>
+
+<nav>
+  <li><a href="index.html">Sign In</a></li>
+  <li><a href="home.html">Homepage</a></li>
+  <li><a href="account.html">Account</a></li>
+  <li><a href="matrix.html">Matrix</a></li>
+</nav>
+
+</body>
+</html>
