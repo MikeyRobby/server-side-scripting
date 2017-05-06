@@ -9,6 +9,7 @@ import (
 var tpl *template.Template
 var dbUsers = map[string]user{}       // user ID, user
 var dbSessions = map[string]session{} // session ID, session
+var u user
 
 func init() {
   tpl = template.Must(template.ParseGlob("templates/*"))
@@ -26,7 +27,6 @@ type user struct {
 type session struct {
   un string
 }
-var u user
 
 
 func main() {
