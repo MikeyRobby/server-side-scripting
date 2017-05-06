@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+  <style>
+    html, body{
+      margin:0;
+      border: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url("https://static.pexels.com/photos/58568/pexels-photo-58568.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    form {
+      font-size: 2em;
+      color: red;
+    }
+
+    form input{
+      font-size: 1em;
+      border-radius: 14px;
+      margin: .5em;
+    }
+  </style>
+</head>
+<body>
+<form method="post">
+  <h1>Login</h1>
+  <input type="text" name="username" placeholder="Username"><br>
+  <input type="password" name="password" placeholder="Password"><br>
+  <input type="submit">
+  <a href="/signup">
+    <h3>Sign Up</h3>
+  </a>
+</form>
+</body>
+</html>

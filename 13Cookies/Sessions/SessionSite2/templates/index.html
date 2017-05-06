@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome!</title>
+  <style>
+    html, body{
+      margin: 0;
+      padding: 0;
+      border: 0;
+      height: 100%;
+    }
+
+    body{
+      background: url("https://static.pexels.com/photos/119731/pexels-photo-119731.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #F90101;
+      text-align: center;
+    }
+
+    h1{
+      color: #F90101;
+      text-align: center;
+    }
+
+    div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    div a{
+      margin-right: 2em;
+      text-decoration: none;
+      color: #F90101;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Welcome!</h1><br>
+
+<div>
+  <a href="/logout">
+  <h3>Log Out</h3>
+</a>
+  <a href="/login">
+  <h3>Log In</h3>
+</a>
+  <a href="/signup">
+  <h3>Sign Up</h3>
+</a><br>
+</div>
+
+{{if .First}}
+<h2>First Name: {{.First}}</h2>
+<h2>Last Name: {{.Last}}</h2>
+<h2>Username: {{.Username}}</h2>
+<h2>Password: {{.Pass}}</h2>
+<h2>Email: {{.Email}}</h2>
+<h2>Role: {{.Role}}</h2>
+{{end}}
+
+</body>
+</html>
