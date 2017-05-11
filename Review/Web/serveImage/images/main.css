@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/images/Welcome_to_Paradise,_CA.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Page</title>
+    <style>
+      html, body, h1, h2{
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(black, blue,black);
+        height: 100vh;
+        color:white;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      {{range .}}
+      <h1>{{.First}} {{.Last}}</h1>
+      <h2>{{.Saying}}</h2>
+      {{end}}
+    </main>
+    <ul>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+      <li>success</li>
+
+    </ul>
+  </body>
+</html>
