@@ -5,6 +5,8 @@
     <title>MongoDB</title>
   </head>
   <body>
-    {{.}}
+  {{range .}}
+  <h1>{{.Author}} - {{.Title}}</h1>
+  {{end}}
   </body>
 </html>
